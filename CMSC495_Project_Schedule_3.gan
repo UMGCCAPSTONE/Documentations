@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Capstone Project Gantt Chart" company="" webLink="https://github.com/UMGCCAPSTONE" view-date="2026-05-13" view-index="0" gantt-divider-location="420" resource-divider-location="300" version="3.3.3322" locale="en_US">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="240" order="0"/>
+        <field id="tpd4" name="Begin date" width="81" order="1"/>
+        <field id="tpd5" name="End date" width="83" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="1" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="100" uid="s1000000000000000000000000000001" name="Sprint 1: Scope, Setup, and DevOps Bootstrap" color="#1f88c8" meeting="false" start="2026-05-27" duration="8" complete="0" expand="true">
+            <task id="110" uid="g1100000000000000000000000000001" name="Scope and Requirements" meeting="false" start="2026-05-27" duration="3" complete="0" expand="true">
+                <task id="111" uid="t1110000000000000000000000000001" name="T-1 Finalize MVP scope" meeting="false" start="2026-05-27" duration="1" complete="0" expand="true">
+                    <depend id="112" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="112" uid="t1120000000000000000000000000001" name="T-2 Define page-level requirements" meeting="false" start="2026-05-28" duration="1" complete="0" expand="true">
+                    <depend id="113" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="113" uid="t1130000000000000000000000000001" name="T-3 Create user stories and acceptance criteria" meeting="false" start="2026-05-29" duration="1" complete="0" expand="true">
+                    <depend id="190" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="190" uid="m1900000000000000000000000000001" name="M-1 Scope Complete" meeting="true" start="2026-06-01" duration="0" complete="0" expand="true">
+                    <depend id="120" type="2" difference="0" hardness="Strong"/>
+                    <depend id="130" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="120" uid="g1200000000000000000000000000001" name="Frontend Setup" meeting="false" start="2026-06-01" duration="2" complete="0" expand="true">
+                <task id="121" uid="t1210000000000000000000000000001" name="T-4 Frontend Setup (React/Vite, routing, components, API config)" meeting="false" start="2026-06-01" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="130" uid="g1300000000000000000000000000001" name="Database Schema" meeting="false" start="2026-06-01" duration="2" complete="0" expand="true">
+                <task id="131" uid="t1310000000000000000000000000001" name="T-11 Database Schema (users, inventory, suppliers, menu, recommendations)" meeting="false" start="2026-06-01" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="140" uid="g1400000000000000000000000000001" name="DevOps Bootstrap" meeting="false" start="2026-05-27" duration="2" complete="0" expand="true">
+                <task id="141" uid="t1410000000000000000000000000001" name="T-25 Generate LLM API Key" meeting="false" start="2026-05-27" duration="1" complete="0" expand="true">
+                    <depend id="142" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="142" uid="t1420000000000000000000000000001" name="T-26 Secure Local Environments" meeting="false" start="2026-05-28" duration="1" complete="0" expand="true"/>
+                <task id="143" uid="t1430000000000000000000000000001" name="T-22 Provision and Configure EC2 Server" meeting="false" start="2026-05-27" duration="1" complete="0" expand="true"/>
+                <task id="144" uid="t1440000000000000000000000000001" name="T-19 Setup GitHub Actions Workflow" meeting="false" start="2026-05-27" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="101" uid="ms10000000000000000000000000000001" name="M-S1 Sprint 1 Complete" meeting="true" start="2026-06-10" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="200" uid="s2000000000000000000000000000002" name="Sprint 2: Backend, Frontend, and AI Development" color="#27ae60" meeting="false" start="2026-06-10" duration="8" complete="0" expand="true">
+            <task id="210" uid="g2100000000000000000000000000002" name="Backend APIs" meeting="false" start="2026-06-10" duration="6" complete="0" expand="true">
+                <task id="211" uid="t2110000000000000000000000000002" name="T-12 Inventory API (CRUD)" meeting="false" start="2026-06-10" duration="2" complete="0" expand="true">
+                    <depend id="213" type="2" difference="0" hardness="Strong"/>
+                    <depend id="214" type="2" difference="0" hardness="Strong"/>
+                    <depend id="215" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="212" uid="t2120000000000000000000000000002" name="T-14 Supplier API" meeting="false" start="2026-06-10" duration="1" complete="0" expand="true">
+                    <depend id="291" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="213" uid="t2130000000000000000000000000002" name="T-13 Dashboard API" meeting="false" start="2026-06-12" duration="2" complete="0" expand="true">
+                    <depend id="291" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="214" uid="t2140000000000000000000000000002" name="T-16 AI Prompt Workflow" meeting="false" start="2026-06-12" duration="2" complete="0" expand="true">
+                    <depend id="215" type="2" difference="0" hardness="Strong"/>
+                    <depend id="292" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="215" uid="t2150000000000000000000000000002" name="T-15 Menu / Recommendation API" meeting="false" start="2026-06-17" duration="2" complete="0" expand="true">
+                    <depend id="291" type="2" difference="0" hardness="Strong"/>
+                    <depend id="292" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="216" uid="t2160000000000000000000000000002" name="T-17 Fallback Logic" meeting="false" start="2026-06-17" duration="1" complete="0" expand="true">
+                    <depend id="291" type="2" difference="0" hardness="Strong"/>
+                    <depend id="292" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="291" uid="m2910000000000000000000000000002" name="M-3 Backend Ready" meeting="true" start="2026-06-19" duration="0" complete="0" expand="true"/>
+                <task id="292" uid="m2920000000000000000000000000002" name="M-4 AI Logic Ready" meeting="true" start="2026-06-19" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="220" uid="g2200000000000000000000000000002" name="Frontend UI" meeting="false" start="2026-06-10" duration="8" complete="0" expand="true">
+                <task id="221" uid="t2210000000000000000000000000002" name="T-5 Authentication UI" meeting="false" start="2026-06-10" duration="2" complete="0" expand="true"/>
+                <task id="222" uid="t2220000000000000000000000000002" name="T-7 Inventory UI" meeting="false" start="2026-06-12" duration="3" complete="0" expand="true"/>
+                <task id="223" uid="t2230000000000000000000000000002" name="T-9 Supplier UI" meeting="false" start="2026-06-11" duration="2" complete="0" expand="true"/>
+                <task id="224" uid="t2240000000000000000000000000002" name="T-6 Dashboard UI" meeting="false" start="2026-06-17" duration="3" complete="0" expand="true"/>
+                <task id="225" uid="t2250000000000000000000000000002" name="T-8 Menu Builder / AI UI" meeting="false" start="2026-06-19" duration="2" complete="0" expand="true"/>
+                <task id="226" uid="t2260000000000000000000000000002" name="T-10 Reports UI" meeting="false" start="2026-06-19" duration="2" complete="0" expand="true"/>
+                <task id="293" uid="m2930000000000000000000000000002" name="M-2 Frontend Ready" meeting="true" start="2026-06-24" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="230" uid="g2300000000000000000000000000002" name="CI/CD and Infrastructure" meeting="false" start="2026-06-10" duration="7" complete="0" expand="true">
+                <task id="231" uid="t2310000000000000000000000000002" name="T-24 Connect CI/CD to EC2" meeting="false" start="2026-06-10" duration="1" complete="0" expand="true">
+                    <depend id="233" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="232" uid="t2320000000000000000000000000002" name="T-27 Configure Production and Pipeline Secrets" meeting="false" start="2026-06-11" duration="1" complete="0" expand="true">
+                    <depend id="294" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="233" uid="t2330000000000000000000000000002" name="T-23 Orchestrate Containers (docker-compose)" meeting="false" start="2026-06-11" duration="1" complete="0" expand="true">
+                    <depend id="294" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="234" uid="t2340000000000000000000000000002" name="T-20 Integrate Automated Testing (Vitest + Jest)" meeting="false" start="2026-06-19" duration="1" complete="0" expand="true">
+                    <depend id="294" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="294" uid="m2940000000000000000000000000002" name="M-9 CI/CD Pipeline Ready" meeting="true" start="2026-06-22" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="201" uid="ms20000000000000000000000000000002" name="M-S2 Sprint 2 Complete" meeting="true" start="2026-06-24" duration="0" complete="0" expand="true"/>
+        </task>
+        <task id="300" uid="s3000000000000000000000000000003" name="Sprint 3: Integration, Testing, Deployment, and Docs" color="#e67e22" meeting="false" start="2026-06-24" duration="8" complete="0" expand="true">
+            <task id="310" uid="g3100000000000000000000000000003" name="Integration" meeting="false" start="2026-06-24" duration="2" complete="0" expand="true">
+                <task id="311" uid="t3110000000000000000000000000003" name="T-18 API Integration (connect all frontend pages to backend)" meeting="false" start="2026-06-24" duration="2" complete="0" expand="true">
+                    <depend id="390" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="312" uid="t3120000000000000000000000000003" name="T-21 Automate Deployment via Docker Compose" meeting="false" start="2026-06-24" duration="1" complete="0" expand="true">
+                    <depend id="390" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="390" uid="m3900000000000000000000000000003" name="M-5 Integration Complete" meeting="true" start="2026-06-26" duration="0" complete="0" expand="true">
+                    <depend id="320" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="320" uid="g3200000000000000000000000000003" name="Testing" meeting="false" start="2026-06-26" duration="2" complete="0" expand="true">
+                <task id="321" uid="t3210000000000000000000000000003" name="T-28 Testing (frontend, backend, DB, AI recommendation flow)" meeting="false" start="2026-06-26" duration="2" complete="0" expand="true">
+                    <depend id="391" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="391" uid="m3910000000000000000000000000003" name="M-6 Testing Complete" meeting="true" start="2026-07-01" duration="0" complete="0" expand="true">
+                    <depend id="330" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="330" uid="g3300000000000000000000000000003" name="Deployment" meeting="false" start="2026-07-01" duration="1" complete="0" expand="true">
+                <task id="331" uid="t3310000000000000000000000000003" name="T-29 Deployment (to demo hosting environment)" meeting="false" start="2026-07-01" duration="1" complete="0" expand="true">
+                    <depend id="392" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="392" uid="m3920000000000000000000000000003" name="M-7 Deployment Complete" meeting="true" start="2026-07-02" duration="0" complete="0" expand="true">
+                    <depend id="340" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="340" uid="g3400000000000000000000000000003" name="Documentation and Demo Prep" meeting="false" start="2026-07-02" duration="2" complete="0" expand="true">
+                <task id="341" uid="t3410000000000000000000000000003" name="T-30 Documentation (README, user guide, design, test evidence)" meeting="false" start="2026-07-02" duration="1" complete="0" expand="true">
+                    <depend id="342" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="342" uid="t3420000000000000000000000000003" name="T-31 Demo Prep (demo data, walkthrough, screenshots, backup)" meeting="false" start="2026-07-03" duration="1" complete="0" expand="true"/>
+                <task id="393" uid="m3930000000000000000000000000003" name="M-8 Final Submission Ready" meeting="true" start="2026-07-06" duration="0" complete="0" expand="true"/>
+            </task>
+            <task id="301" uid="ms30000000000000000000000000000003" name="M-S3 Sprint 3 Complete / Project Done" meeting="true" start="2026-07-08" duration="0" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
