@@ -105,7 +105,7 @@ Roles align with the `UserRole` enum: **OWNER**, **MANAGER**, **STAFF**.
 > As a **Manager**, I want to see inventory KPI cards at the top of the Inventory page so that I know the aggregate health of my stock without reading every row.
 
 **Acceptance Criteria:**
-- Cards display: total items, SKU count (aggregate), items expiring soon, at-risk value, and below-par count
+- Cards display: total items, SKU count (aggregate), items expiring `<48h`, at-risk value, and below-par count
 - Data is fetched on page load and updates after CRUD operations
 
 ### US-INV-3
@@ -198,7 +198,7 @@ Roles align with the `UserRole` enum: **OWNER**, **MANAGER**, **STAFF**.
 > As a **Manager**, I want the application to degrade gracefully when the AI service is unavailable so that the rest of the app remains usable.
 
 **Acceptance Criteria:**
-- When the LLM API is unreachable or returns an error, a user-friendly error message is shown
+- When the LLM API is unreachable or returns bad output, the app returns a rule-based fallback recommendation flagged as fallback (ADR-0005) — it does **not** show only an error message
 - The application does not crash or display a blank/broken screen
 - Other pages and features remain accessible
 
