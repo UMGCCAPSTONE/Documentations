@@ -289,10 +289,10 @@ Roles align with the `UserRole` enum: **OWNER**, **MANAGER**, **STAFF**.
 
 | Area                     | Core Stories | Stretch Stories |
 |--------------------------|:------------:|:---------------:|
-| Authentication           | 3            | 0               |
+| Authentication           | 4            | 0               |
 | Dashboard                | 3            | 0               |
 | Inventory Management     | 5            | 2               |
 | Menu Builder / AI        | 6            | 0               |
 | Suppliers                | 3            | 1               |
 | Reports                  | 4            | 1               |
-| **Total**                | **24**       | **4**           |
+| **Total**                | **25**       | **4**           |
