@@ -76,6 +76,10 @@
                     <depend id="213" type="2" difference="0" hardness="Strong"/>
                     <depend id="214" type="2" difference="0" hardness="Strong"/>
                     <depend id="215" type="2" difference="0" hardness="Strong"/>
+                    <depend id="217" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="217" uid="t2170000000000000000000000000002" name="T-12A Contracts reconciliation (publish @umgccapstone/contracts; align frontend-authored types/Zod with implemented API shapes; pin in both repos)" meeting="false" start="2026-06-18" duration="1" complete="0" expand="true">
+                    <depend id="311" type="2" difference="0" hardness="Strong"/>
                 </task>
                 <task id="212" uid="t2120000000000000000000000000002" name="T-14 Supplier API" meeting="false" start="2026-06-10" duration="1" complete="0" expand="true">
                     <depend id="291" type="2" difference="0" hardness="Strong"/>
