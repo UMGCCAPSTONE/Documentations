@@ -12,9 +12,9 @@ Per-page requirements for the MVP of *Mise* (Smart Inventory Management & AI Rec
 > - **Roles** — no role-based access control in MVP. All authenticated users have the same access; `role` is a profile label only (captured at onboarding, gates nothing).
 > - **Dish margin / menu pricing** — stretch, not MVP (the contract has no price field on menu items).
 >
-> **Open items to confirm:**
-> - **Expiring window** (PO) — default is a single `EXPIRING_WINDOW_DAYS = 7` flag, with `<48h` highlighted as urgent (mockups also show watch `3–5d` / stable `>5d` tiers). Confirm the threshold(s).
-> - **Menu sections** (PO + contract) — the Menu page filters dishes by course (Starters / Pasta / Mains), which needs a `section` field on `MenuItem` that the contract doesn't have. Confirm adding it (contract + T-15), or drop course filtering for the MVP.
+> **Resolved decisions (formerly open items):**
+> - **Expiring window** ✅ — confirmed: `EXPIRING_WINDOW_DAYS = 7` (outer window, `isExpiringSoon`) and `URGENT_WINDOW_HOURS = 48` (urgent tier, `<48h` highlight). No third tier. Already implemented in `@umgccapstone/contracts` `constants.ts`.
+> - **Menu sections** ✅ — course filtering (Starters / Pasta / Mains) is **out of MVP**. No `section` field on `MenuItem`. T-8A implements dish cards without section filters.
 
 ---
 
