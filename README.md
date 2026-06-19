@@ -34,6 +34,14 @@ Per-ticket planning and requirements live in [`tasks/`](./tasks/):
 | T-3 — User Stories & Acceptance Criteria | [tasks/T-3-user-stories.md](./tasks/T-3-user-stories.md) |
 | T-11 — Database Schema | [tasks/T-11-database-schema.md](./tasks/T-11-database-schema.md) |
 
+## 🗓️ Sprint planning
+
+| Doc | Purpose |
+|-----|---------|
+| [Sprint 2 — Final Week Plan (Jun 17–24)](./Sprint_2_Final_Week_Plan.md) | Current week's assignments, milestones, and T-13 plan |
+| [Sprint 1–2 Assignment Plan](./Sprint_1-2_Assignment_Plan.md) | Standing ticket grouping & ownership (source of truth) |
+| [Project schedule (Gantt)](./gantt_chart/) | Authoritative timeline, milestones, and dependencies |
+
 ## 🎫 Tickets & process
 
 - Full ticket set: [`github_tickets.md`](./github_tickets.md)
