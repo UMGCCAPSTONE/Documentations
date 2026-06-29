@@ -1,0 +1,19 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*~
+.vscode/
+.idea/
+
+# Archives & installers (do not commit binaries — link to the source instead)
+*.zip
+*.7z
+*.rar
+*.exe
+*.msi
+*.dmg
+
+# Temp files
+*.tmp
+*.bak
+*.log
